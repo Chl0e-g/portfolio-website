@@ -54,6 +54,9 @@ nav {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
   color: #FFFFFF;
 }
 
@@ -65,7 +68,11 @@ nav a:hover {
   color: #232121;
 }
 
-nav .blogLink {
+nav a.current {
+  color: #87FDFD;
+}
+
+nav #blogLink {
   margin-left: 120px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;

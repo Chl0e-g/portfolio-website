@@ -12,12 +12,13 @@
 </head>
 <body>
     <nav>
-        <a href="/">About Me</a>
-        <a href="/">Projects</a>
-        <a href="/">Contact</a>
-        <a href="/" class="blogLink">Blog</a>
+        <a href="#" id="aboutMe">About Me</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
+        <a href="#" id="blogLink">Blog</a>
     </nav>
     <main>
+        <section class="aboutMe">
         <div class="header">
         <h1>Hi, I'm Chloe</h1>
             <p class="tagline">I'm a <em>fullstack software developer</em> looking for new opportunities</p>
@@ -33,7 +34,9 @@
                 <li>CSS</li>
                 <li>Sass</li>
             </ul>
+        </section>
 
+        <section class="projects">
         <h2>Projects</h2>
             <h3>01</h3>
             <h4>Title of project</h4>
@@ -70,14 +73,19 @@
                     <li>Technology 2</li>
                     <li>Technology 3</li>
                 </ul>
+            </section>
     </main>
 
     <footer>
+        <section class="contact">
         <h3>Contact</h3>
             <p>I'd love to hear from you. Get in touch at <a href="/">xxx@xxx.com</a></p>
             
             <div>LinkedIn</div>
             <div>GitHub</div>
+        </section>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

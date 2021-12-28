@@ -3,14 +3,19 @@ nav {
     display: flex;
     justify-content: flex-end;
     margin: 30px;
+    position: sticky;
+    top: 30px;
     color: $white;
     a {
         margin-left: 50px;
         &:hover {
             color: $headerGrey;
         }
+        &.current {
+            color: $navBlue;
+        }
     }
-    .blogLink {
+    #blogLink {
         margin-left: 120px;
         @include bodyFontMed;
     }
