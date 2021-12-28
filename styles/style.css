@@ -41,6 +41,36 @@ h4 {
   color: #1F6C84;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 30px;
+  color: #FFFFFF;
+}
+
+nav a {
+  margin-left: 50px;
+}
+
+nav a:hover {
+  color: #232121;
+}
+
+nav .blogLink {
+  margin-left: 120px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
 .header {
   color: #FFFFFF;
 }
