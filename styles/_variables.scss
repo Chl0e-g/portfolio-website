@@ -1,0 +1,35 @@
+//fonts
+@mixin accentFontBold() {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+@mixin accentFontReg() {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+@mixin bodyFontMed() {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+@mixin bodyFontReg() {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@mixin bodyFontLight() {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
+
+//colours
+$white: #FFFFFF;
+$black: #000000;
+$navBlue: #87FDFD;
+$headerGrey: #232121;
+$backgroundGrey: #CACEC9;
+$teal: #1F6C84;

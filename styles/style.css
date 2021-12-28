@@ -1,0 +1,64 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #CACEC9;
+  color: #000000;
+}
+
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #232121;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000000;
+}
+
+h4 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #1F6C84;
+}
+
+.header {
+  color: #FFFFFF;
+}
+
+.tagline {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+.tagline em {
+  font-style: normal;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+}
+
+.intro {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */

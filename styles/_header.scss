@@ -1,0 +1,16 @@
+.header {
+    color: $white;
+}
+
+.tagline {
+    @include accentFontReg;
+    font-size: 1.75rem;
+    em {
+        font-style: normal;
+        @include accentFontBold;
+    }
+}
+
+.intro {
+    @include bodyFontLight;
+}

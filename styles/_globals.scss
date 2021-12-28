@@ -1,0 +1,37 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    @include bodyFontReg;
+    font-size: 1rem;
+    background-color: $backgroundGrey;
+    color: $black;
+}
+
+h1 {
+    @include accentFontBold;
+    font-size: 4.5rem;
+    color: $white;
+}
+
+h2 {
+    @include bodyFontLight;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $headerGrey;
+}
+
+h3 {
+    @include bodyFontMed;
+    font-size: 1rem;
+    color: $black;
+}
+
+h4 {
+    @include accentFontBold;
+    font-size: 2rem;
+    color: $teal;
+}
