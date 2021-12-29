@@ -23,7 +23,6 @@ nav {
 @include breakpoint-up(medium) {
     nav {
         justify-content: flex-end;
-        flex-direction: row;
         margin: 30px;
         top: 30px;
         a {
