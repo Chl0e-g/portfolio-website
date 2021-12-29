@@ -12,15 +12,16 @@
     <title>Chloe Glassonbury</title>
 </head>
 <body>
-    <nav>
-        <a href="#aboutMe" class="aboutMe">About Me</a>
-        <a href="#projects" class="projects">Projects</a>
-        <a href="#contact" class="contact">Contact</a>
-        <a href="/" class="blogLink">Blog</a>
+    <nav role="navigation" aria-label="Main navigation menu">
+        <a href="#aboutMe" class="hide aboutMe current">About Me</a>
+        <a href="#projects" class="hide projects">Projects</a>
+        <a href="#contact" class="hide contact">Contact</a>
+        <a href="/" class="hide blogLink">Blog</a>
 
         <!--mobile hamburger menu-->
-        <span class="hide-for-desktop material-icons">menu</span>
+        <span class="material-icons hamburger" onclick="hamburgerDisplay()">menu</span>
     </nav>
+
     <main>
         <section id="aboutMe">
         <div class="header">

@@ -21,3 +21,16 @@ window.addEventListener('scroll', ()=> {
     })
 })
 
+//hamburger menu display
+
+function hamburgerDisplay() {
+    navList.forEach( li => {
+        if(li.classList.contains('show')) {
+            li.classList.remove('show');
+            li.classList.add('hide');
+        } else if (li.classList.contains('hide')) {
+            li.classList.remove('hide');
+            li.classList.add('show');
+        }
+    })
+}

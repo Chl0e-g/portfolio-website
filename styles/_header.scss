@@ -9,29 +9,64 @@ nav {
         }
         &.current {
             color: $navBlue;
+            pointer-events: none;
         }
     }
-    #blogLink {
+    .blogLink {
         @include bodyFontMed;
     }
 }
+
+
 
 //Navigation bar desktop
 @include breakpoint-up(medium) {
     nav {
         justify-content: flex-end;
+        flex-direction: row;
         margin: 30px;
         top: 30px;
         a {
             margin-left: 50px;
         }
-        #blogLink {
+        .hamburger {
+            display: none;
+        }
+        .blogLink {
             margin-left: 120px;
         }
     }
+
 }
 
 
+
+//Navigation bar mobile and tablet
+@include breakpoint-down(medium) {
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 15px;
+        a {
+            margin-top: 20px;
+        }
+    }
+    .hamburger {
+        display: block !important;
+        order: -1;
+        cursor: pointer;
+        text-decoration: none;
+        &:active {
+            color: $navBlue;
+        }
+    }
+    .show {
+        display: block;
+    }
+    .hide {
+        display: none
+    }
+}
 
 
 //Header and introduction

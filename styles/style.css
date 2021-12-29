@@ -47,18 +47,6 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 39.9375em) {
-  .hide-for-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: 40em) {
-  .hide-for-desktop {
-    display: none !important;
-  }
-}
-
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,9 +62,10 @@ nav a:hover {
 
 nav a.current {
   color: #87FDFD;
+  pointer-events: none;
 }
 
-nav #blogLink {
+nav .blogLink {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
@@ -86,14 +75,54 @@ nav #blogLink {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: 30px;
     top: 30px;
   }
   nav a {
     margin-left: 50px;
   }
-  nav #blogLink {
+  nav .hamburger {
+    display: none;
+  }
+  nav .blogLink {
     margin-left: 120px;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 15px;
+  }
+  nav a {
+    margin-top: 20px;
+  }
+  .hamburger {
+    display: block !important;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .hamburger:active {
+    color: #87FDFD;
+  }
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
   }
 }
 
