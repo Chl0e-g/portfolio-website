@@ -1,5 +1,6 @@
 html {
     font-size: 100%;
+    margin-left: 100px;
 }
 
 body {
@@ -41,3 +42,17 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+//visibility
+.hide-for-mobile {
+    @include breakpoint-down(small) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(medium) {
+        display: none !important;
+    }
+}
+//end of visibility

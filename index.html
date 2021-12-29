@@ -8,17 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Chloe Glassonbury</title>
 </head>
 <body>
     <nav>
-        <a href="#" id="aboutMe">About Me</a>
-        <a href="#" id="projects">Projects</a>
-        <a href="#" id="contact">Contact</a>
-        <a href="#" id="blogLink">Blog</a>
+        <a href="#aboutMe" class="aboutMe">About Me</a>
+        <a href="#projects" class="projects">Projects</a>
+        <a href="#contact" class="contact">Contact</a>
+        <a href="/" class="blogLink">Blog</a>
+
+        <!--mobile hamburger menu-->
+        <span class="hide-for-desktop material-icons">menu</span>
     </nav>
     <main>
-        <section class="aboutMe">
+        <section id="aboutMe">
         <div class="header">
         <h1>Hi, I'm Chloe</h1>
             <p class="tagline">I'm a <em>fullstack software developer</em> looking for new opportunities</p>
@@ -36,7 +40,7 @@
             </ul>
         </section>
 
-        <section class="projects">
+        <section id="projects">
         <h2>Projects</h2>
             <h3>01</h3>
             <h4>Title of project</h4>
@@ -77,8 +81,8 @@
     </main>
 
     <footer>
-        <section class="contact">
-        <h3>Contact</h3>
+        <section id="contact">
+        <h2>Contact</h2>
             <p>I'd love to hear from you. Get in touch at <a href="/">xxx@xxx.com</a></p>
             
             <div>LinkedIn</div>
