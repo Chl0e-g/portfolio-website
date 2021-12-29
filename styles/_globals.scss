@@ -1,6 +1,5 @@
 html {
     font-size: 100%;
-    margin-left: 100px;
 }
 
 body {
@@ -8,14 +7,15 @@ body {
     padding: 0;
     @include bodyFontReg;
     font-size: 1rem;
-    background-color: $backgroundGrey;
     color: $black;
+    position: absolute;
 }
 
 h1 {
     @include accentFontBold;
     font-size: 4.5rem;
     color: $white;
+    margin: 0;
 }
 
 h2 {
@@ -43,8 +43,11 @@ a {
     text-decoration: none;
 }
 
-//icons
+//ion icons
 .launch {
     font-size: 1.2rem !important;
     vertical-align: text-bottom;
 }
+
+
+//background image

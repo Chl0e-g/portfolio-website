@@ -3,6 +3,7 @@ nav {
     display: flex;
     color: $white;
     position: sticky;
+    z-index: 1;
     a {
         &:hover {
             color: $headerGrey;
@@ -69,9 +70,22 @@ nav {
 
 
 //Header and introduction
-.header {
-    color: $white;
+.headerImage {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(/images/header-image-1920x1440.jpg);
 }
+
+.headerText {
+    color: $white;
+    margin: 9.375rem;
+    margin-right: 30vw;
+}
+
 
 .tagline {
     @include accentFontReg;
@@ -84,4 +98,10 @@ nav {
 
 .intro {
     @include bodyFontLight;
+}
+
+
+//Technologies
+.technologies {
+
 }

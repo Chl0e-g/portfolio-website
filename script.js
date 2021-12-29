@@ -11,6 +11,9 @@ window.addEventListener('scroll', ()=> {
         if(pageYOffset >= (sectionTop - sectionHeight / 3)) {
             current = section.getAttribute('id');
         }
+        if(pageYOffset <=20) {
+            current = 'aboutMe';
+        }
     })
 
     navList.forEach( li => {
