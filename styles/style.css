@@ -9,7 +9,6 @@ body {
   font-weight: 400;
   font-size: 1rem;
   color: #000000;
-  position: absolute;
 }
 
 h1 {
@@ -51,6 +50,10 @@ p {
   line-height: 1.4em;
 }
 
+.ion-icon {
+  font-size: 3.5rem;
+}
+
 .launch {
   font-size: 1.2rem !important;
   vertical-align: text-bottom;
@@ -63,6 +66,7 @@ nav {
   color: #FFFFFF;
   position: -webkit-sticky;
   position: sticky;
+  top: 30px;
   z-index: 1;
 }
 
@@ -140,6 +144,7 @@ nav .blogLink {
   width: 100%;
   background-size: cover;
   background-image: url(/images/header-image-1920x1440.jpg);
+  margin-bottom: 0px;
 }
 
 .headerText {
@@ -197,5 +202,32 @@ nav .blogLink {
   h1 {
     font-size: 2rem;
   }
+}
+
+.technologies {
+  background-color: #CACEC9;
+  width: 100%;
+  min-height: 20vh;
+  position: absolute;
+  top: 100%;
+}
+
+.technologies h2, .technologies ul {
+  margin: 1rem 9.375rem;
+}
+
+.technologies ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+#projects {
+  position: relative;
+  top: 800px;
 }
 /*# sourceMappingURL=style.css.map */

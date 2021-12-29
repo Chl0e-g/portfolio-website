@@ -8,7 +8,6 @@ body {
     @include bodyFontReg;
     font-size: 1rem;
     color: $black;
-    position: absolute;
 }
 
 h1 {
@@ -47,11 +46,12 @@ p {
     line-height: 1.4em;
 }
 
-//ion icons
+//icons
+.ion-icon {
+    font-size: 3.5rem;
+}
+
 .launch {
     font-size: 1.2rem !important;
     vertical-align: text-bottom;
 }
-
-
-//background image
