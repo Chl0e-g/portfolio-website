@@ -25,7 +25,6 @@ nav {
     nav {
         justify-content: flex-end;
         margin: 30px;
-        top: 30px;
         a {
             margin-left: 50px;
         }
@@ -54,6 +53,7 @@ nav {
     .hamburger {
         display: block !important;
         order: -1;
+        margin: 20px 20px 0px 0px;
         cursor: pointer;
         text-decoration: none;
         &:active {
@@ -69,7 +69,7 @@ nav {
 }
 
 
-//Header and introduction
+//Header and introduction desktop
 .headerImage {
     position: absolute;
     z-index: -1;
@@ -82,22 +82,44 @@ nav {
 
 .headerText {
     color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin: 9.375rem;
-    margin-right: 30vw;
-}
-
-
-.tagline {
-    @include accentFontReg;
-    font-size: 1.75rem;
-    em {
-        font-style: normal;
-        @include accentFontBold;
+    margin-right: 40vw;
+    .tagline {
+        @include accentFontReg;
+        font-size: 1.75rem;
+        em {
+            font-style: normal;
+            @include accentFontBold;
+        }
+    }
+    .intro {
+        @include bodyFontLight;
     }
 }
 
-.intro {
-    @include bodyFontLight;
+//Header and introduction tablet
+@include breakpoint-down(medium) {
+    .headerText {
+        margin: 5rem;
+        justify-content: center;
+    }
+}
+
+//Header and introduction mobile
+@include breakpoint-down(small) {
+    .headerText {
+        margin: 1.25rem;
+        .tagline {
+            font-size: 1.3rem;
+        }
+    }
+    h1 {
+        font-size: 2rem;
+    }
 }
 
 
