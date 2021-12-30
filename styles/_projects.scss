@@ -1,0 +1,40 @@
+//desktop display
+#projects {
+    position: relative;
+    padding-top: 10rem;
+    margin: 9.375rem;
+    .project-block {
+        padding-top: 60px;
+        display: flex;
+    }
+    img {
+        padding: 0px 30px;
+        max-width: 30vw;
+    }
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+    .live {
+        background-color: $teal;
+        margin-right: 20px;
+        color: $white;
+        &:hover {
+            color: $navBlue;
+        }
+    }
+    .code {
+        background-color: $backgroundGrey;
+        color: $teal;
+        &:hover {
+            color: $white;
+        }
+    }
+    li {
+        display: inline-block;
+        margin-right: 35px;
+        color: $teal;
+    }
+}

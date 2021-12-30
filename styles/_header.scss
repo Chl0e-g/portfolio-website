@@ -2,7 +2,7 @@
 nav {
     display: flex;
     color: $white;
-    position: sticky;
+    //position: sticky;
     top: 0;
     z-index: 1;
     a {
@@ -39,11 +39,6 @@ nav {
 
 }
 
-//nav bar on scroll
-.nav-beneath-header {
-    background-color: black;
-}
-
 
 //Navigation bar mobile and tablet
 @include breakpoint-down(medium) {
@@ -70,6 +65,12 @@ nav {
     .hide {
         display: none;
     }
+}
+
+//nav bar on scroll
+.nav-beneath-header {
+    background-image: url(/images/header-image-1920x1440.jpg);
+    position: sticky;
 }
 
 //Header and introduction desktop
@@ -139,11 +140,9 @@ nav {
         margin: 1rem 9.375rem;
     }
     ul {
-        list-style-type: none;
         display: flex;
         justify-content: space-around;
         text-align: center;
-        padding: 0;
         padding-top: 5px;
     }
 
