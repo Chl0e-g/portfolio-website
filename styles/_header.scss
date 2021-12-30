@@ -3,7 +3,7 @@ nav {
     display: flex;
     color: $white;
     position: sticky;
-    top: 30px;
+    top: 0;
     z-index: 1;
     a {
         &:hover {
@@ -25,7 +25,7 @@ nav {
 @include breakpoint-up(medium) {
     nav {
         justify-content: flex-end;
-        margin: 30px;
+        padding: 30px;
         a {
             margin-left: 50px;
         }
@@ -39,6 +39,10 @@ nav {
 
 }
 
+//nav bar on scroll
+.nav-beneath-header {
+    background-color: black;
+}
 
 
 //Navigation bar mobile and tablet
@@ -46,7 +50,7 @@ nav {
     nav {
         flex-direction: column;
         align-items: flex-end;
-        margin: 15px;
+        padding: 20px;
         a {
             margin-top: 20px;
         }
@@ -54,7 +58,6 @@ nav {
     .hamburger {
         display: block !important;
         order: -1;
-        margin: 20px 20px 0px 0px;
         cursor: pointer;
         text-decoration: none;
         &:active {
@@ -65,10 +68,9 @@ nav {
         display: block;
     }
     .hide {
-        display: none
+        display: none;
     }
 }
-
 
 //Header and introduction desktop
 .headerImage {

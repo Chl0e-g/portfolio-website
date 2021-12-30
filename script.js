@@ -24,7 +24,21 @@ window.addEventListener('scroll', ()=> {
     })
 })
 
-//hamburger menu display
+//nav bar background and stickiness appearing after scroll
+const projectsSection = document.getElementById('projects');
+const projectsSectionTop = projectsSection.offsetTop;
+const navBar = document.querySelector('nav');
+
+window.addEventListener('scroll', ()=> {
+    if(pageYOffset >= projectsSectionTop) {
+        navBar.classList.add('nav-beneath-header');
+    } else {
+        navBar.classList.remove('nav-beneath-header');
+    }
+})
+    
+
+//hamburger menu display and collapse
 
 function hamburgerDisplay() {
     navList.forEach( li => {
