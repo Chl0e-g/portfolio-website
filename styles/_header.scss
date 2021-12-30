@@ -79,7 +79,7 @@ nav {
     width: 100%;
     background-size: cover;
     background-image: url(/images/header-image-1920x1440.jpg);
-    margin-bottom: 0px;
+    background-position: top;
 }
 
 .headerText {
@@ -90,6 +90,7 @@ nav {
     align-items: flex-start;
     margin: 9.375rem;
     margin-right: 40vw;
+    max-width: 1000px;
     .tagline {
         @include accentFontReg;
         font-size: 1.75rem;
@@ -131,7 +132,7 @@ nav {
     width: 100%;
     min-height: 20vh;
     position: absolute;
-    top: 100%;
+    top: 80%;
     h2, ul {
         margin: 1rem 9.375rem;
     }
@@ -140,11 +141,42 @@ nav {
         display: flex;
         justify-content: space-around;
         text-align: center;
+        padding: 0;
+        padding-top: 5px;
     }
 
 }
 
-#projects {
-    position: relative;
-    top: 800px;;
+//Technologies tablet
+@include breakpoint-down(medium) {
+    .technologies {
+        h2, ul {
+            margin: 1rem 5rem;
+        }
+        ul {
+            justify-content: space-between;
+            padding-top: 3px;
+        }
+    }
 }
+
+//Technologies mobile
+@include breakpoint-down(small) {
+    .technologies {
+        h2, ul {
+            margin: 1rem 1.25rem;
+        }
+        ul {
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: flex-start;
+            li {
+                flex: 1 0 30%;
+                margin: 5px;
+            }
+        }
+    }
+}
+
+
+
