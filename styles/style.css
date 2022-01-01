@@ -95,13 +95,8 @@ nav a:hover {
 }
 
 nav a.current {
-  color: #87FDFD;
+  color: #94e4f8;
   pointer-events: none;
-}
-
-nav .blogLink {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
 }
 
 @media (min-width: 40em) {
@@ -116,9 +111,6 @@ nav .blogLink {
   }
   nav .hamburger {
     display: none;
-  }
-  nav .blogLink {
-    margin-left: 120px;
   }
 }
 
@@ -145,7 +137,7 @@ nav .blogLink {
     text-decoration: none;
   }
   .hamburger:active {
-    color: #87FDFD;
+    color: #94e4f8;
   }
   .show {
     display: block;
@@ -319,7 +311,7 @@ nav .blogLink {
 }
 
 #projects .live:hover {
-  color: #87FDFD;
+  color: #94e4f8;
 }
 
 #projects .code {
@@ -441,7 +433,7 @@ footer .attrib {
 }
 
 footer a:hover {
-  color: #87FDFD;
+  color: #94e4f8;
 }
 
 @media (max-width: 63.9375em) {

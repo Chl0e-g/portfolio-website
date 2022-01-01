@@ -16,9 +16,6 @@ nav {
             pointer-events: none;
         }
     }
-    .blogLink {
-        @include bodyFontMed;
-    }
 }
 
 
@@ -33,9 +30,6 @@ nav {
         }
         .hamburger {
             display: none;
-        }
-        .blogLink {
-            margin-left: 120px;
         }
     }
 
