@@ -1,0 +1,47 @@
+//desktop display
+footer {
+    background-image: url(/images/header-image-1920x1440.jpg);
+    color: white;
+    padding: 1rem 9.375rem;
+    overflow: auto;
+    p {
+        padding: 0px 50px;
+    }
+    h2 {
+        color: white;
+    }
+    .footer-icons {
+        float: right;
+        div {
+            display: inline-block;
+        }
+    }
+    .attrib {
+        @include bodyFontLight;
+        font-size: 0.7rem;
+    }
+    a:hover {
+        color: $navBlue;
+    }
+}
+
+//tablet display
+@include breakpoint-down(medium) {
+    footer {
+        padding: 1rem 5rem;
+        p {
+            padding: 0;
+        }
+    }
+}
+
+//mobile display
+@include breakpoint-down(small) {
+    footer {
+        padding: 1rem 1.25rem;
+        .footer-icons {
+            float: none;
+            text-align: center;
+        }
+    }
+}

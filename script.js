@@ -8,11 +8,16 @@ window.addEventListener('scroll', ()=> {
     navSections.forEach( section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
+        const documentHeight = document.body.scrollHeight;
+        const currentScroll = pageYOffset + window.innerHeight;
         if(pageYOffset >= (sectionTop - sectionHeight / 3)) {
             current = section.getAttribute('id');
         }
         if(pageYOffset <=20) {
             current = 'aboutMe';
+        }
+        if(currentScroll >= (documentHeight - 150)) {
+            current = 'contact';
         }
     })
 

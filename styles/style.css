@@ -67,6 +67,11 @@ ul {
   font-size: 3.5rem;
 }
 
+footer .ion-icon {
+  font-size: 2.2rem;
+  margin: 10px;
+}
+
 .launch {
   font-size: 1.2rem !important;
   vertical-align: text-bottom;
@@ -403,6 +408,58 @@ nav .blogLink {
   #projects li {
     display: block;
     margin: 5px 0px;
+  }
+}
+
+footer {
+  background-image: url(/images/header-image-1920x1440.jpg);
+  color: white;
+  padding: 1rem 9.375rem;
+  overflow: auto;
+}
+
+footer p {
+  padding: 0px 50px;
+}
+
+footer h2 {
+  color: white;
+}
+
+footer .footer-icons {
+  float: right;
+}
+
+footer .footer-icons div {
+  display: inline-block;
+}
+
+footer .attrib {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+
+footer a:hover {
+  color: #87FDFD;
+}
+
+@media (max-width: 63.9375em) {
+  footer {
+    padding: 1rem 5rem;
+  }
+  footer p {
+    padding: 0;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  footer {
+    padding: 1rem 1.25rem;
+  }
+  footer .footer-icons {
+    float: none;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
