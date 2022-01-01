@@ -361,7 +361,6 @@ nav .blogLink {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    border: 2px solid red;
   }
   #projects img {
     max-width: 100%;
