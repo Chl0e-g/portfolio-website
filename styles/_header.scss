@@ -146,10 +146,9 @@ nav {
     background-color: $backgroundGrey;
     width: 100%;
     min-height: 20vh;
-    position: static;
     h2, ul {
         margin: 0;
-        padding: 1rem 9.375rem;
+        padding: 1.3rem 9.375rem;
     }
     ul {
         display: flex;
@@ -164,7 +163,6 @@ nav {
 @include breakpoint-down(medium) {
     .technologies {
         h2, ul {
-            margin: 0;
             padding: 1rem 5rem;
         }
         ul {
@@ -178,12 +176,15 @@ nav {
 @include breakpoint-down(small) {
     .technologies {
         h2, ul {
-            margin: 0;
             padding: 1rem 1.25rem;
         }
+        h2 {
+            line-height: 0rem;
+            padding-bottom: 1.5rem;
+        }
         ul {
+            padding-top: 0;
             flex-wrap: wrap;
-            align-content: center;
             align-items: flex-start;
             li {
                 flex: 1 0 30%;
