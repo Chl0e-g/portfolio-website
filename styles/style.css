@@ -160,9 +160,21 @@ nav a.current {
 }
 
 .nav-beneath-header {
-  background-image: url(/images/header-image-1920x1440.jpg);
+  background-image: url(/images/header-image-4000x3000.jpg);
   position: -webkit-sticky;
   position: sticky;
+}
+
+@media (max-width: 63.9375em) {
+  .nav-beneath-header {
+    background-image: url(/images/header-image-1920x1440.jpg);
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .nav-beneath-header {
+    background-image: url(/images/header-image-640x480.jpg);
+  }
 }
 
 .headerImage {
@@ -172,8 +184,20 @@ nav a.current {
   height: 80vh;
   width: 100%;
   background-size: cover;
-  background-image: url(/images/header-image-1920x1440.jpg);
+  background-image: url(/images/header-image-4000x3000.jpg);
   background-position: top;
+}
+
+@media (max-width: 63.9375em) {
+  .headerImage {
+    background-image: url(/images/header-image-1920x1440.jpg);
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .headerImage {
+    background-image: url(/images/header-image-640x480.jpg);
+  }
 }
 
 .headerText {
@@ -417,10 +441,22 @@ nav a.current {
 }
 
 footer {
-  background-image: url(/images/header-image-1920x1440.jpg);
+  background-image: url(/images/header-image-4000x3000.jpg);
   color: white;
   padding: 1rem 9.375rem;
   overflow: auto;
+}
+
+@media (max-width: 63.9375em) {
+  footer {
+    background-image: url(/images/header-image-1920x1440.jpg);
+  }
+}
+
+@media (max-width: 39.9375em) {
+  footer {
+    background-image: url(/images/header-image-640x480.jpg);
+  }
 }
 
 footer p {

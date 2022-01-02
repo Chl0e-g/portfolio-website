@@ -1,6 +1,12 @@
 //desktop display
 footer {
-    background-image: url(/images/header-image-1920x1440.jpg);
+    background-image: url(/images/header-image-4000x3000.jpg);
+    @include breakpoint-down(medium) {
+        background-image: url(/images/header-image-1920x1440.jpg);
+    }
+    @include breakpoint-down(small) {
+        background-image: url(/images/header-image-640x480.jpg)
+    }
     color: white;
     padding: 1rem 9.375rem;
     overflow: auto;
