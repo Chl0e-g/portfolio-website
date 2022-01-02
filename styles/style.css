@@ -126,7 +126,8 @@ nav a.current {
     padding: 20px;
   }
   nav a {
-    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .hamburger {
     display: block !important;
@@ -144,6 +145,17 @@ nav a.current {
   }
   .hide {
     display: none;
+  }
+  .nav-bar-show {
+    background-color: #000000;
+  }
+  .nav-bar-show a {
+    width: 100%;
+    border-top: 0.5px solid #FFFFFF;
+    text-align: end;
+  }
+  .nav-bar-show .aboutMe {
+    margin-top: 15px;
   }
 }
 

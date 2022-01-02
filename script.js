@@ -28,6 +28,38 @@ window.addEventListener('scroll', ()=> {
         }
     })
 })
+    
+
+//hamburger menu display and collapse
+
+function hamburgerDisplay() {
+    navList.forEach( li => {
+        if(li.classList.contains('show')) {
+            li.classList.remove('show');
+            li.classList.add('hide');
+            navBar.classList.remove('nav-bar-show');
+        } else if (li.classList.contains('hide')) {
+            li.classList.remove('hide');
+            li.classList.add('show');
+            navBar.classList.add('nav-bar-show');
+        }
+    })
+}
+
+//--collapse hamburger menu on click of any nav link
+
+navList.forEach( li => {
+    li.addEventListener("click", function() {
+        navList.forEach(li => {
+            if(li.classList.contains('show')) {
+                li.classList.remove('show');
+                li.classList.add('hide');
+                navBar.classList.remove('nav-bar-show');
+            }
+        })
+    })
+})
+
 
 //nav bar background and stickiness appearing after scroll
 const projectsSection = document.getElementById('projects');
@@ -41,18 +73,3 @@ window.addEventListener('scroll', ()=> {
         navBar.classList.remove('nav-beneath-header');
     }
 })
-    
-
-//hamburger menu display and collapse
-
-function hamburgerDisplay() {
-    navList.forEach( li => {
-        if(li.classList.contains('show')) {
-            li.classList.remove('show');
-            li.classList.add('hide');
-        } else if (li.classList.contains('hide')) {
-            li.classList.remove('hide');
-            li.classList.add('show');
-        }
-    })
-}

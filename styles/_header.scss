@@ -43,7 +43,8 @@ nav {
         align-items: flex-end;
         padding: 20px;
         a {
-            margin-top: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
         }
     }
     .hamburger {
@@ -60,6 +61,17 @@ nav {
     }
     .hide {
         display: none;
+    }
+    .nav-bar-show {
+        background-color: $black;
+        a {
+            width: 100%;
+            border-top: 0.5px solid $white;
+            text-align: end;
+        }
+        .aboutMe {
+            margin-top: 15px;
+        }
     }
 }
 
