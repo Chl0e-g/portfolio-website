@@ -96,13 +96,13 @@ nav {
 .headerText {
     float: left;
     color: $white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 9.375rem;
+    height: 80vh;
+    margin-left: 9.375rem;
     margin-right: 40vw;
     max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .tagline {
         @include accentFontReg;
         font-size: 1.75rem;
@@ -119,8 +119,11 @@ nav {
 //Header and introduction tablet
 @include breakpoint-down(medium) {
     .headerText {
-        margin: 5rem;
+        margin: 0rem 5rem;
         justify-content: center;
+        .intro {
+            text-align: justify;
+        }
     }
 }
 
