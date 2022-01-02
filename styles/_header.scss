@@ -9,7 +9,7 @@ nav {
     z-index: 1;
     a {
         &:hover {
-            color: $headerGrey;
+            color: $hoverGrey;
         }
         &.current {
             color: $navBlue;

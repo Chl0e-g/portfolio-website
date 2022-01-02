@@ -91,7 +91,7 @@ nav {
 }
 
 nav a:hover {
-  color: #232121;
+  color: #b3c0c0;
 }
 
 nav a.current {
@@ -446,7 +446,7 @@ footer .attrib {
 }
 
 footer a:hover {
-  color: #94e4f8;
+  color: #b3c0c0;
 }
 
 @media (max-width: 63.9375em) {
