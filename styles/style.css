@@ -234,6 +234,7 @@ nav a.current {
 .headerText .intro {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  line-height: 1.7rem;
 }
 
 @media (max-width: 63.9375em) {
