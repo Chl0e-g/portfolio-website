@@ -16,7 +16,6 @@
         <a href="#aboutMe" class="hide aboutMe current">About Me</a>
         <a href="#projects" class="hide projects">Projects</a>
         <a href="#contact" class="hide contact">Contact</a>
-        <a href="/" class="hide">Blog <span class="material-icons launch">launch</span></a>
 
         <!--mobile hamburger menu-->
         <span class="material-icons hamburger" onclick="hamburgerDisplay()">menu</span>
@@ -48,42 +47,43 @@
         <section id="projects">
         <h2>Projects</h2>
         <div class="project-block">
-            <img src="images/placeholder.jpeg" alt="placeholder image">
+            <img src="images/news-app-server-code.png" alt="Screenshot of my news app server code">
             <h3>01</h3>
-            <h4>Title of project</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum inventore animi omnis sequi deleniti voluptatem error laudantium optio, quos minus harum quia blanditiis molestiae deserunt voluptas nihil repudiandae. Rem, optio.</p>
-            <a href="/" class="button live">View live <span class="material-icons launch">launch</span></a>
-            <a href="/" class="button code">View code <ion-icon name="logo-github" class="ion-icon"></ion-icon></a>
+            <h4>Backend: News App API</h4>
+            <p>This project is an API which provides the backend service for a Reddit-style news site. The API interacts with a PostgreSQL database and enables CRUD functionality on articles, topics, users, and comments, as well as full error handling. I built the server with the Express package, and with full test-driven development using Jest and Supertest. The API is hosted on Heroku, and I'll be building the frontend of the application using React in the next few weeks.</p>
+            <a href="https://chl0e-g-news-app.herokuapp.com/api" class="button live">View live <span class="material-icons launch">launch</span></a>
+            <a href="https://github.com/Chl0e-g/news-app" class="button code">View code <ion-icon name="logo-github" class="ion-icon"></ion-icon></a>
             <ul>
-               <li>Technology 1</li>
-               <li>Technology 2</li>
-                <li>Technology 3</li>
+               <li>Node.js</li>
+               <li>PostgreSQL</li>
+                <li>Express server</li>
+                <li>TDD</li>
             </ul>
         </div>
         <div class="project-block">
-            <img src="images/placeholder.jpeg" alt="placeholder image">
+            <img src="images/budget-planner-screenshot.png" alt="Screenshot of my budget planner app" class="img-border">
             <h3>02</h3>
-            <h4>Title of project</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum inventore animi omnis sequi deleniti voluptatem error laudantium optio, quos minus harum quia blanditiis molestiae deserunt voluptas nihil repudiandae. Rem, optio.</p>
-                <a href="/" class="button live">View live <span class="material-icons launch">launch</span></a>
-                <a href="/" class="button code">View code <ion-icon name="logo-github" class="ion-icon"></ion-icon></a>
+            <h4>Frontend: React Budget Planner App</h4>
+                <p>This is a mini React budgeting web app I built as my first project while learning about React components and state. I designed and styled the app myself. The app makes use of form fields enabling users to add their income and as many outgoings as they wish, and this allowed me to practice using controlled components. It dynamically calculates the budget remaining based on user inputs.</p>
+                <a href="https://chl0e-g-react-budget-planner.herokuapp.com/" class="button live">View live <span class="material-icons launch">launch</span></a>
+                <a href="https://github.com/Chl0e-g/react-budget-planner" class="button code">View code <ion-icon name="logo-github" class="ion-icon"></ion-icon></a>
                 <ul>
-                    <li>Technology 1</li>
-                    <li>Technology 2</li>
-                    <li>Technology 3</li>
+                    <li>React</li>
+                    <li>CSS</li>
+                    <li>JSX</li>
                 </ul>
         </div>
         <div class="project-block">
-            <img src="images/placeholder.jpeg" alt="placeholder image">
+            <img src="images/portfolio-website-screenshot.png" alt="Screenshot of my portfolio website">
             <h3>03</h3>
-            <h4>Title of project</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum inventore animi omnis sequi deleniti voluptatem error laudantium optio, quos minus harum quia blanditiis molestiae deserunt voluptas nihil repudiandae. Rem, optio.</p>
+            <h4>Portfolio Website</h4>
+                <p>I designed and developed this website to use as my portfolio. I made use of my UX expertise when designing the website on Figma. The site is fully responsive with a collapsible menu for mobile and tablet. I achieved this with a combination of viewport breakpoints and relative size units. It is also optimized for performance, calling in smaller graphics for smaller device sizes. While building this project I learnt Sass (SCSS) to ensure the CSS is well-organised, manageable, and easily updateable. The website is dynamic, built using a one page design with the navigation bar automatically highlighting the current section. Finally, it follows web accessibility standards.</p>
                 <a href="/" class="button live">View live <span class="material-icons launch">launch</span></a>
-                <a href="/" class="button code">View code <ion-icon name="logo-github" class="ion-icon"></ion-icon></a>
+                <a href="https://github.com/Chl0e-g/portfolio-website" class="button code">View code <ion-icon name="logo-github" class="ion-icon"></ion-icon></a>
                 <ul>
-                    <li>Technology 1</li>
-                    <li>Technology 2</li>
-                    <li>Technology 3</li>
+                    <li>HTML</li>
+                    <li>SCSS</li>
+                    <li>JavaScript</li>
                 </ul>
         </div>
         </section>
@@ -92,10 +92,10 @@
     <footer>
         <section id="contact">
         <h2>Contact</h2>
-            <p>I'd love to hear from you. Get in touch at <a href="/">xxx@xxx.com</a></p>
+            <p>I'd love to hear from you. Get in touch at <a href="mailto:chloe_g@btinternet.com">chloe_g@btinternet.com</a> or message me on LinkedIn.</p>
             <div class="footer-icons">
-                <div><a href="/"><ion-icon name="logo-linkedin" class="ion-icon"></ion-icon></a></div>
-                <div><a href="/"><ion-icon name="logo-github" class="ion-icon"></ion-icon></a></div>
+                <div><a href="https://www.linkedin.com/in/chloe-glassonbury-84390b231/"><ion-icon name="logo-linkedin" class="ion-icon"></ion-icon></a></div>
+                <div><a href="https://github.com/Chl0e-g"><ion-icon name="logo-github" class="ion-icon"></ion-icon></a></div>
             </div>
             <p class="attrib">Background image by Jeremy Bishop on Unsplash</p>
         </section>

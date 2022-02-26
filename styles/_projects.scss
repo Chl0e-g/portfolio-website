@@ -1,100 +1,106 @@
 //desktop display
 #projects {
-    padding: 5rem 9.375rem;
-    .project-block {
-        padding: 50px 20px;
-        overflow: auto;
-        max-width: 1400px;
-        margin: auto;
+  padding: 5rem 9.375rem;
+  .project-block {
+    padding: 50px 20px;
+    overflow: auto;
+    max-width: 1400px;
+    margin: auto;
+  }
+  p {
+    line-height: 1.7rem;
+  }
+  img {
+    margin-right: 30px;
+    max-width: 30vw;
+    float: left;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .live {
+    background-color: $teal;
+    margin-right: 20px;
+    color: $white;
+    &:hover {
+      color: $navBlue;
     }
-    img {
-        padding-right: 30px;
-        max-width: 30vw;
-        float: left;
+  }
+  .code {
+    background-color: $backgroundGrey;
+    color: $teal;
+    &:hover {
+      color: $white;
     }
-    .button {
-        display: inline-block;
-        padding: 10px 20px;
-        margin-top: 20px;
-        margin-bottom: 20px
-    }
-    .live {
-        background-color: $teal;
-        margin-right: 20px;
-        color: $white;
-        &:hover {
-            color: $navBlue;
-        }
-    }
-    .code {
-        background-color: $backgroundGrey;
-        color: $teal;
-        &:hover {
-            color: $white;
-        }
-    }
-    li {
-        display: inline-block;
-        margin-right: 35px;
-        color: $teal;
-    }
+  }
+  li {
+    display: inline-block;
+    margin-right: 35px;
+    color: $teal;
+  }
+}
+
+.img-border {
+  border: 1px solid $teal;
 }
 
 //tablet display
 @include breakpoint-down(medium) {
-    #projects {
-        padding: 5rem 5rem;
-        .project-block {
-            padding: 40px 0px 40px 0px;
-            overflow: visible;
-        }
-        .button {
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
+  #projects {
+    padding: 5rem 5rem;
+    .project-block {
+      padding: 40px 0px 40px 0px;
+      overflow: visible;
     }
+    .button {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
 }
 
 //mobile display
 @include breakpoint-down(small) {
-    #projects {
-       padding: 3rem 1.25rem;
-        .project-block {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-            img {
-                max-width: 100%;
-                order: -1;
-                align-self: center;
-                padding: 0px;
-            }
-            h3 {
-                order: -3;
-            }
-            h4 {
-                order: -2;
-                margin-bottom: 5px;
-            }
-            p {
-                text-align: justify;
-            }
-            .button {
-                align-self: center;
-                text-align: center;
-                margin-right: 0px;
-                width: 50vw;
-                max-width: 200px;
-            }
-            ul {
-                align-self: center;
-            }
-            li {
-                display: block;
-                margin: 5px 0px;
-            }
-
+  #projects {
+    padding: 3rem 1.25rem;
+    .project-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
+    img {
+      max-width: 100%;
+      order: -1;
+      align-self: center;
+      padding: 0px;
+    }
+    h3 {
+      order: -3;
+    }
+    h4 {
+      order: -2;
+      margin-bottom: 5px;
+    }
+    p {
+      text-align: justify;
+    }
+    .button {
+      align-self: center;
+      text-align: center;
+      margin-right: 0px;
+      width: 50vw;
+      max-width: 200px;
+    }
+    ul {
+      align-self: center;
+    }
+    li {
+      display: block;
+      margin: 5px 0px;
+    }
+  }
 }
-
