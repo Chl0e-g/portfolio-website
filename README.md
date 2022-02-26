@@ -4,7 +4,7 @@
 This project is a portfolio website I've created to display my work as a fullstack developer. In addition to having a primary function as my portfolio, I also used this project to learn SASS/SCSS and practice building fully responsive websites using a combination of CSS flexbox and media queries. I fully designed the website myself on Figma, and replicated my designs when building the site. 
 
 ## Hosted website
-https://git.heroku.com/chloe-glassonbury-portfolio.git
+https://chloe-glassonbury-portfolio.herokuapp.com/
 
 ## Technologies
 I created this website with:
