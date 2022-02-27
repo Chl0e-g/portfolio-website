@@ -334,7 +334,7 @@ nav a.current {
 }
 
 #projects img {
-  margin-right: 30px;
+  padding-right: 30px;
   max-width: 30vw;
   float: left;
 }
@@ -446,6 +446,7 @@ nav a.current {
   #projects li {
     display: block;
     margin: 5px 0px;
+    text-align: center;
   }
 }
 
